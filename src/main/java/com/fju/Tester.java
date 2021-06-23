@@ -1,6 +1,5 @@
 package com.fju;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Tester {
@@ -11,6 +10,8 @@ public class Tester {
         Scanner scanner = new Scanner(System.in);
         int total=0;
         int discount=0;
+        Time time = new Time();
+        time.time();
         while(true){
             System.out.println("please ch your moive and type moivenumber");
             System.out.println("1.Aladdin");
@@ -43,10 +44,6 @@ public class Tester {
                 System.out.println("error");
                 break;
             }break;
-
-
         }
-
     }
-
 }
