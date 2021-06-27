@@ -1,8 +1,9 @@
 package com.fju;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
-import java.util.Calendar;
+
 
 public class Tester {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class Tester {
         Mermaid mermaid = new Mermaid();
         Scanner scanner = new Scanner(System.in);
         int total = 0;
+        Onmoive onmoive = new Onmoive();
         Time time = new Time();
         time.time();
         Calendar rightNow = Calendar.getInstance();
@@ -29,23 +31,23 @@ public class Tester {
                         System.out.println("please type your count");
                         int choicecount = scanner.nextInt();
                         aladdin.count = choicecount;
-                        total = aladdin.count * aladdin.price-30;
+                        total = aladdin.count * (aladdin.price-30);
                         System.out.println(aladdin.menu + " " + "您購買的數量:" + aladdin.count + " " + "總額:" + total);
-                        System.out.println("電影10分鐘後上映");
+                        onmoive.moive();
                     } else if (choice == 2) {
                         System.out.println("please type your count");
                         int choicecount = scanner.nextInt();
                         dumbo.count = choicecount;
-                        total = dumbo.count * dumbo.price-30;
+                        total = dumbo.count * (dumbo.price-30);
                         System.out.println(dumbo.menu + " " + "您購買的數量:" + dumbo.count + " " + "總額:" + total);
-                        System.out.println("電影10分鐘後上映");
+                        onmoive.moive();
                     } else if (choice == 3) {
                         System.out.println("please type your count");
                         int choicecount = scanner.nextInt();
                         mermaid.count = choicecount;
-                        total = mermaid.count * mermaid.price-30;
+                        total = mermaid.count * (mermaid.price-30);
                         System.out.println(mermaid.menu + " " + "您購買的數量:" + mermaid.count + " " + "總額:" + total);
-                        System.out.println("電影10分鐘後上映");
+                        onmoive.moive();
                     } else if (choice == 4) {
                         System.out.println("have a good day");
                         break;
@@ -63,21 +65,21 @@ public class Tester {
                     aladdin.count = choicecount;
                     total = aladdin.count * aladdin.price;
                     System.out.println(aladdin.menu + " " + "您購買的數量:" + aladdin.count + " " + "總額:" + total);
-                    System.out.println("電影10分鐘後上映");
+                    onmoive.moive();
                 } else if (choice == 2) {
                     System.out.println("please type your count");
                     int choicecount = scanner.nextInt();
                     dumbo.count = choicecount;
                     total = dumbo.count * dumbo.price;
                     System.out.println(dumbo.menu + " " + "您購買的數量:" + dumbo.count + " " + "總額:" + total);
-                    System.out.println("電影10分鐘後上映");
+                    onmoive.moive();
                 } else if (choice == 3) {
                     System.out.println("please type your count");
                     int choicecount = scanner.nextInt();
                     mermaid.count = choicecount;
                     total = mermaid.count * mermaid.price;
                     System.out.println(mermaid.menu + " " + "您購買的數量:" + mermaid.count + " " + "總額:" + total);
-                    System.out.println("電影10分鐘後上映");
+                    onmoive.moive();
                 } else if (choice == 4) {
                     System.out.println("have a good day");
                     break;
